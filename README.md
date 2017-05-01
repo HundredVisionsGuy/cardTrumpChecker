@@ -5,12 +5,17 @@ You are tasked with writing a function that receives two cards each in the form 
 ----------
 The rules are as follows:
 * cards are numbered from 1 - 10
-* each card has one of three different colors: green, yellow, and red.
-* Higher numbers always trump (beat) lower numbers (color doesn't matter)
-* When the colors are the same,
+* each card has one of three different colors:
+  * green,
+  * yellow, and
+  * red.
+* Higher numbers always trump (beat) lower numbers
+  * color doesn't matter if one number is higher than the other
+* When the numbers are the same...
   * yellow trumps (beats) green
   * red trumps (beats) yellow
-* If both cards have the same number and color, card1 always wins (it was played first)
+* If both cards have the same number and color, card1 always wins
+  * it was played first
 
 **Inputs:**
 ----------
@@ -25,6 +30,10 @@ cardTrumpChecker() receives two inputs (tuples): **card1** and **card2**
 **Output:**
 ------------
 cardTrumpChecker() returns 1 output (a string): **card**
+
+**Hints:**
+------------
+For this challenge, since you are using tuples, you're going to want to review indexing with tuples.
 
 **Examples:**
 inputs => output/s
