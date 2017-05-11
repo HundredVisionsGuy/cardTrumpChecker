@@ -27,14 +27,14 @@ class KnownValues(unittest.TestCase):
         # Check for expected output
         self.assertEqual("card2")
 
-    def test_cardTrumpCheckerForHighNumLowColor(self):
+    def test_cardTrumpCheckerForHigherNumLowColor(self):
         # Capture the results of the function
         result = cardTrumpChecker.cardTrumpChecker(('card1', 2, 'green'),
                                                    ('card2', 1, 'red'))
         # Check for expected output
         self.assertEqual("card1", result)
 
-    def test_cardTrumpCheckerForSameCardSameNum(self):
+    def test_cardTrumpCheckerForSameCardSameColor(self):
         # Capture the results of the function
         result = cardTrumpChecker.cardTrumpChecker(('card1', 10, 'red'),
                                                    ('card2', 10, 'red'))
@@ -55,7 +55,7 @@ class KnownValues(unittest.TestCase):
         # Check for expected output
         self.assertEqual("card1", result)
 
-    def test_cardTrumpCheckerForHighNumHighColor(self):
+    def test_cardTrumpCheckerForHighNum_HighColor_2(self):
         # Capture the results of the function
         result = cardTrumpChecker.cardTrumpChecker(('card1', 10, 'red'),
                                                    ('card2', 7, 'green') )
