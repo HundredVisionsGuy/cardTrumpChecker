@@ -63,3 +63,12 @@ def test_cardTrumpCheckerForHighNum_HighColor_2():
                                                ('card2', 7, 'green'))
     expected = "card1"
     assert result == expected
+
+
+def test_cardTrumpCheckerForGreenOverRed():
+    # Capture the results of the function
+    result = cardTrumpChecker.cardTrumpChecker(('card2', 7, 'red'),
+                                               ('card1', 8, 'green')
+                                               )
+    expected = "card2"
+    assert result == expected
